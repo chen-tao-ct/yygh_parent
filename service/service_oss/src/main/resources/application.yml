@@ -31,12 +31,6 @@ spring:
         server-addr: 192.168.126.128:8848
         group: yygh
 
-aliyun:
-  oss:
-    accessKeyId: LTAI5tKtbwREnB3MJFaKvjVw
-    secret: tRePUkSWLIjQ5rQFN96JACyJgjo1D3
-    bucket: yygh--bucket
-    endpoint: oss-cn-shanghai.aliyuncs.com
 
 
 
