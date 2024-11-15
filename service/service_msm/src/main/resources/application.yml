@@ -32,19 +32,19 @@ spring:
         group: yygh
 
 # 腾讯云短信服务配置
-sms-config:
+# sms-config:
   # 腾讯云账户密钥对 secretId 和 secretKey
-  secretId: AKIDb1A2ez3qMcbJkunPkpc8NL2SaR2MPBgu
-  secretKey: yf4E8l7D2arra2DG2XkgLjqfEWWFiupT
+  # secretId: AKIDb1A2ez3qMcbJkunPkpc8NL2SaR2MPBgu
+  # secretKey: yf4E8l7D2arra2DG2XkgLjqfEWWFiupT
   # 短信应用appId和appKey
-  appId: 1400620674
-  appKey: 1888fd31686c53372009656f3ce724bb
+  # appId: 1400620674
+  # appKey: 1888fd31686c53372009656f3ce724bb
   # 签名
-  smsSign: funnykeke
+  # smsSign: funnykeke
   # 过期时间
-  endPoint: 10  # 10min
+  # endPoint: 10  # 10min
   # 模板id
-  templateId: 1273584
+  # templateId: 1273584
 
 
 
