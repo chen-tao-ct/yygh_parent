@@ -1,0 +1,44 @@
+# 服务端口
+server:
+  port: 80
+# 服务名
+spring:
+  application:
+    name: service-gateway
+  cloud:
+    #使用服务发现路由
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: service-hosp
+          predicates: Path=/*/hosp/**
+          uri: lb://service-hosp
+        - id: service-cmn
+          predicates: Path=/*/cmn/**
+          uri: lb://service-cmn
+        - id: service-user
+          predicates: Path=/*/user/**
+          uri: lb://service-user
+        - id: service-msm
+          predicates: Path=/*/msm/**
+          uri: lb://service-msm
+        - id: service-user
+          predicates: Path=/*/ucenter/**
+          uri: lb://service-user
+        - id: service-oss
+          predicates: Path=/*/oss/**
+          uri: lb://service-oss
+        - id: service-order
+          predicates: Path=/*/order/**
+          uri: lb://service-order
+        - id: service-statistics
+          predicates: Path=/*/statistics/**
+          uri: lb://service-statistics
+    # nacos服务地址
+    nacos:
+      discovery:
+        server-addr: 192.168.126.128:8848
+        group: yygh
+

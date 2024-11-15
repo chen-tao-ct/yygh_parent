@@ -1,0 +1,33 @@
+server:
+  port: 8206
+spring:
+  application:
+    name: service-order
+  cloud:
+    # nacos服务地址
+    nacos:
+      discovery:
+        server-addr: 192.168.126.128:8848
+        group: yygh
+  data:
+    mongodb:
+      host: 127.0.0.1
+      port: 27017
+      database: yygh_hosp
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    #password: ct19991207
+    password: 123456
+    url: jdbc:mysql://192.168.126.128:3306/yygh_order?characterEncoding=utf-8&useSSL=false
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  profiles:
+    active: dev
+#  rabbitmq:
+#    host: 121.40.97.6
+#    password: guest
+#    port: 5672
+#    username: guest

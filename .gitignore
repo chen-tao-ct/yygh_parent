@@ -1,0 +1,14 @@
+# 项目排除路径
+/common/common_util/target/
+/common/service_util/target/
+/model/target/
+/service/service_cmn/target/
+/service/service_hosp/target/
+/service/service_msm/target/
+/service/service_order/target/
+/service/service_oss/target/
+/service/service_user/target/
+/service_client/service_cmn_client/target/
+/service_client/service_hosp_client/target/
+/service_client/service_user_client/target/
+/service_gateway/target/

@@ -1,0 +1,43 @@
+server:
+  port: 8202
+spring:
+  application:
+    name: service-cmn
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    #password: ct19991207
+    password: 123456
+    url: jdbc:mysql://192.168.126.128:3306/yygh_cmn?characterEncoding=utf-8&useSSL=false
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  redis:
+    host: 121.40.97.6
+    port: 6379
+    database: 0
+    timeout: 1800000
+    lettuce:
+      pool:
+        max-active: 20
+        max-wait: -1
+        max-idle: 5
+        min-idle: 0
+      shutdown-timeout: 100
+  cloud:
+    # nacos服务地址
+    nacos:
+      discovery:
+        server-addr: 192.168.126.128:8848
+        group: yygh
+
+mybatis-plus:
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      logic-delete-value: 1
+      logic-not-delete-value: 0
