@@ -11,8 +11,7 @@ import org.springframework.context.annotation.ComponentScan;
 @EnableDiscoveryClient
 @EnableFeignClients(basePackages = {"com.atguigu"})
 public class ServiceOrderApplication {
-    public static void main(String[] args) {
-        SpringApplication.run(ServiceOrderApplication.class, args);
-    }
+  public static void main(String[] args) {
+    SpringApplication.run(ServiceOrderApplication.class, args);
+  }
 }
-

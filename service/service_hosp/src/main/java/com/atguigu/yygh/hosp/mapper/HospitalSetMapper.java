@@ -7,6 +7,4 @@ import org.springframework.stereotype.Repository;
 
 @Mapper
 @Repository
-public interface HospitalSetMapper extends BaseMapper<HospitalSet> {
-
-}
+public interface HospitalSetMapper extends BaseMapper<HospitalSet> {}

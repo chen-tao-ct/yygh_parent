@@ -12,13 +12,13 @@ import org.springframework.web.multipart.MultipartFile;
 @RequestMapping("/api/oss/file")
 public class FileApiController {
 
-    @Autowired
-    private FileService fileService;
-    //上传文件到阿里云oss
-    @PostMapping("fileUpload")
-    public Result fileUpload(MultipartFile file) {
-        //获取上传文件
-        String url = fileService.upload(file);
-        return Result.ok(url);
-    }
+  @Autowired private FileService fileService;
+
+  // 上传文件到阿里云oss
+  @PostMapping("fileUpload")
+  public Result fileUpload(MultipartFile file) {
+    // 获取上传文件
+    String url = fileService.upload(file);
+    return Result.ok(url);
+  }
 }

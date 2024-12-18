@@ -7,6 +7,4 @@ import org.springframework.stereotype.Repository;
 
 @Mapper
 @Repository
-public interface DictMapper extends BaseMapper<Dict> {
-
-}
+public interface DictMapper extends BaseMapper<Dict> {}
